@@ -1,0 +1,56 @@
+//! \mainpage Computer Graphics Project Documentation - Group F
+//!
+//! \subsection intro_sec Topic:
+//!
+//! The topic for the project is softening shadows and removing artifacts using <b>Percentage Closer Filtering (PCF) </b>.
+//! <br>
+//!  \subsection aim_sec Aim:
+//!   
+//!  We used this research paper where the authors present a solution to aliasing problem for shadow algorithms that uses depth maps.
+//!
+//!  https://graphics.pixar.com/library/ShadowMaps/paper.pdf
+//! <br>
+//! \subsection overview_sec Overview:
+//!
+//!  We will be using Directional Lights as our main source of lightings in the scene and have a Crow model placed for our test subject.
+//!  
+//!  We are using Depth Maps for implementing Shadow Maps in the scene. ShadowMap Program generates a Depth Map from light's perspective and sends it to the camera for the models to cast shadows using Shader Program.
+//!
+//!  Here, we should see a Hardline Shadow formed by the parts of models to itself like the hat to its face, beak to its clothes and many more.
+//!
+//!  By implementing PCF, we apply a Kernel of some radius to average out the shadow value across the edge of the shadows and blending the edge.
+//! 
+//!  We see a good result of soft shadows for radius of 3 and above but we notice significant performance issues for radius near 8 and above due to it's computation needs.
+//!  
+//! \subsection team_sec Team Members: 
+//!
+//!  <pre>
+//!  ROHIT ARYAN            2020AAPS0293H
+//!  RUSHIL SHRIVASTAVA     2020AAPS1408H 
+//!  GAUTHAM GUTTA          2020AAPS2204H 
+//!  SAMARPIT S ROUT        2020AAPS1332H 
+//!  </pre>
+//!
+//!  
+//!  \subsection implementation_sec Results:
+//!  
+//!  Results for Sample Radius = 0, Sample Radius = 2 and Sample Radius = 5 respectively
+//!
+//!  \image{inline} html sample_radius_0.png width=333cm 
+//!  \image{inline} html sample_radius_2.png width=320cm 
+//!  \image{inline} html sample_radius_5.png width=348cm 
+//!
+//!
+//!
+//!
+//!
+//!
+//!
+//!
+//!
+//!
+//!
+//!
+//!
+//!
+//!
