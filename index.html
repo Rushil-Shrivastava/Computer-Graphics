@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="device-width, inital-scale=1">
+        <title>Technical Document</title>
+        <link rel="stylesheet" href="Index.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <header class="navbar-header">
+                <h1>Computer Graphics Project</h1>
+            </header>
+        </nav>
+        <div  class="iframe1">  
+            <header class="e">To be shown in this presentation</header><br>
+                <a href="#q1" class="a">1. Introduction</a><br>
+                <a href="#q2" class="a">2. Aim</a><br>
+                <a href="#q3" class="a">3. Overview</a><br>
+                <a href="#q4" class="a">4. Final Render</a>
+        </div>
+        <div class="iframe2">
+            <header class="h" id="q1">Introduction</header><hr>
+                <p>
+                    Greetings! The topic for the project is softening shadows and removing artifacts using <br>Percentage Closer Filtering (PCF)<br>
+                </p> 
+                <p>
+                    MEMBERS:-<br>
+                    ROHIT ARYAN<br>
+                    RUSHIL SHRIVASTAVA<br>
+                    GAUTHAM GUTTA<br>
+                    SAMARPITH S ROUT<br>
+                </p>
+                <hr>
+            <header class="h" id="q2">Aim</header><hr>
+                <p>
+                    We used this research paper where the authors present a solution to aliasing problem for shadow algorithms that uses depth maps.
+                </p>
+                <p><a href="https://graphics.pixar.com/library/ShadowMaps/paper.pdf">Link to the Research paper</a></p>
+            <hr>
+            <header class="h" id="q3">Overview</header><hr>
+            <p>We will be using Directional Lights as our main source of lightings in the scene and have a Crow model placed for our test subject.<br>
+                We are using Depth Maps for implementing Shadow Maps in the scene. ShadowMap Program generates a Depth Map from light's perspective and sends it to the camera for the models to cast shadows using Shader Program.<br>
+                Here, we should see a Hardline Shadow formed by the parts of models to itself like the hat to its face, beak to its clothes and many more.<br>
+                By implementing PCF, we apply a Kernel of some radius to average out the shadow value across the edge of the shadows and blending the edge.<br></p>
+                <div class="video">
+                    <img  class="image" src="../images/code.png">
+                </div>
+            <hr>
+            <header class="h" id="q4">Final Render</header><hr>
+            <p>We see a good result of soft shadows for radius of 3 and above but we notice significant performance issues for radius near 8 and above due to it's computation needs.</p>
+            <div class="row">
+                <img  class="image" src="../images/sample_radius_0.png">
+                <img  class="image" src="../images/sample_radius_2.png">
+            </div>
+            <br>
+            <div class="video">
+                <img  class="image" src="../images/sample_radius_5.png">
+            </div>
+            <br>
+            <hr>
+        </div>
+    </body>
+</html>

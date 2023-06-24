@@ -1,0 +1,102 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+#navbar {
+    margin-top: 0;
+    position: fixed;
+    height: 10vh;
+    width: 100vw;
+    padding-left: 1vw;
+    color: white;
+    background-color: black;
+}
+
+h1 {
+    font-size: 4vh;
+}
+
+#q1, #q2, #q3, #q4 {
+    scroll-margin-top: 11.5vh;
+}
+
+.iframe1 {
+    margin-top: 10vh;
+    padding-left: 1vw;
+    float: left;
+    position: fixed;
+    width: 15vw;
+    height: 91vh;
+    color: rgb(0, 0, 0);
+    /* background-color: rgb(20, 174, 0); */
+    background-color: rgb(1, 62, 192);
+}
+
+.iframe2 {
+    margin-top: 10vh;
+    padding-top: 1.5vh;
+    padding-right: 1.5vw;
+    float: right;
+    display: inline;
+    width: 81vw;
+}
+
+.row {
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#row {
+    margin-bottom: 3vh;
+}
+
+.image {
+    border: solid 2px black;
+    width: 30vw;
+    height: 40vh;
+}
+
+.a{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: cursive;
+}
+.a:hover{
+    color:white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.e{
+    color: white;
+    font-size: 2.5vw;
+    font-family: fantasy;
+}
+
+.box {
+    padding-top: 2.5vh;
+}
+
+.h{
+    font-size: 50px;
+    font-family: serif;
+}
+
+#h {
+    scroll-margin-top: 9vh;
+}
+
+p{
+    font-size: 25px;
+    font-family: serif;
+    padding-left: 10px;
+}
+
+.video {
+    padding-left: 25vw;
+}
